@@ -3,9 +3,9 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 const storyRoutes = require("./routes/storyRoutes");
 //express app - instance of express app
+require("dotenv").config();
 const app = express();
-const dburi =
-  "mongodb+srv://sunilbista:sunil321@node.uza4f.mongodb.net/node-app?retryWrites=true&w=majority&appName=Node";
+const dburi = process.env.MONGODB_URI;
 
 mongoose
   .connect(dburi)
