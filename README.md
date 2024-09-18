@@ -29,22 +29,28 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/your-username/storytime.git
    cd storytime
-
    ```
 
 2. Install the required dependencies
 
-`npm install`
+   ```bash
+     npm install
+   ```
 
 3. Set up environment variables
 
    - Create a `.env` file in the root of your project.
    - Add the following
 
-   `MONGODB_URI = your_mongodb_uri`
+     ```bash
+     MONGODB_URI = your_mongodb_uri`
+     ```
 
 4. Start the application
-   `npm start`
+
+   ```bash
+   npm start
+   ```
 
 5. Access the application at `http://localhost:3000`
 
