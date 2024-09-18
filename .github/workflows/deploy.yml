@@ -19,6 +19,11 @@ jobs:
       - name: Output User
         run: echo "${{ secrets.DOCKER_USERNAME }}"
 
+      - name: Stop and remove old container (if exists)
+        run: |
+          docker stop storytime || true
+          docker rm storytime || true
+
       - name: Build Docker image
         run: docker build -t storytime .
 
