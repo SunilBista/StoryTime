@@ -1,0 +1,24 @@
+<html lang="en">
+  <%- include('../partials/header.ejs') %>
+
+  <body>
+    <%- include('../partials/nav.ejs') %>
+    <div class="story content">
+      <div class="header">
+        <h2>All Stories</h2>
+        <a class="new" href="/story/create">Create New Story</a>
+        </div>
+      <% if(story.length > 0) { %>
+      <% story.forEach(item => { %>
+      <a class="single" href="/story/<%= item._id %>">
+        <h3 class="title"><%= item.title %></h3>
+        <p class="snippet"><%= item.snippet %></p>
+      </a>
+      <% }) %>
+      <% }else{ %>
+      <p class="snippet">No story...</p>
+      <% } %>
+    </div>
+    <%- include('../partials/footer.ejs') %>
+  </body>
+</html>

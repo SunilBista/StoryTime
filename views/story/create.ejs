@@ -1,0 +1,19 @@
+<html lang="en">
+  <%- include('../partials/header.ejs') %>
+
+  <body>
+    <%- include('../partials/nav.ejs') %>
+    <div class="create content">
+      <form action="/story" method="POST">
+        <label for="title">Story Title:</label>
+        <input type="text" id="title" name="title" required />
+        <label for="snippet">Story Snippet:</label>
+        <input type="text" id="snippet" name="snippet" required />
+        <label for="body">Story body:</label>
+        <textarea id="body" name="body" required></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+  <%- include('../partials/footer.ejs') %>
+</html>
