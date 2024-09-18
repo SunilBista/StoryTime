@@ -15,8 +15,8 @@ mongoose
       console.log("Listening in port 3000");
     });
   })
-  .catch(() => {
-    console.log("Error connecting to DB");
+  .catch((err) => {
+    console.log("Error connecting to DB", err);
   });
 app.set("view engine", "ejs");
 
