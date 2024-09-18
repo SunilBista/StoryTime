@@ -6,7 +6,7 @@ const storyRoutes = require("./routes/storyRoutes");
 require("dotenv").config();
 const app = express();
 const dburi = process.env.MONGODB_URI;
-
+app.set("views", path.join(__dirname, "views"));
 mongoose
   .connect(dburi)
   .then(() => {
