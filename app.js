@@ -19,7 +19,7 @@ mongoose
     console.log("Error connecting to DB", err);
   });
 app.set("view engine", "ejs");
-
+//console
 //middleware & static files
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true })); //takes all the url encoded data and passed to request object
