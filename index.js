@@ -18,9 +18,10 @@ mongoose
   .catch((err) => {
     console.log("Error connecting to DB", err);
   });
+
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "public"));
+app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: true })); //takes all the url encoded data and passed to request object
 
 app.use(morgan("dev"));
