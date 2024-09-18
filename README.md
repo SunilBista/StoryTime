@@ -43,7 +43,7 @@ To set up the project locally, follow these steps:
    - Add the following
 
      ```bash
-     MONGODB_URI = your_mongodb_uri`
+     MONGODB_URI = your_mongodb_uri
      ```
 
 4. Start the application
