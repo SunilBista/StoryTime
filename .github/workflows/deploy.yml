@@ -44,4 +44,4 @@ jobs:
           docker pull sunilbista7/storytime:latest &&
           docker stop storytime || true &&
           docker rm storytime || true &&
-          docker run -d -p 80:80 --name storytime sunilbista7/storytime:latest"
+          docker run -d -p 3000:3000 --name storytime sunilbista7/storytime:latest"
