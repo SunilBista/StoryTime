@@ -22,6 +22,9 @@ jobs:
       - name: List Docker images
         run: docker images
 
+      - name: Tag Docker image
+        run: docker tag storytime:latest ${{ secrets.DOCKER_USERNAME }}/storytime:latest
+
       - name: Push Docker image to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/storytime:latest
 
