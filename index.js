@@ -18,7 +18,7 @@ mongoose
   .catch((err) => {
     console.log("Error connecting to DB", err);
   });
-app.set("views", join(__dirname, "views"));
+app.set("views, __dirname + ./views");
 app.set("view engine", "ejs");
 //console
 //middleware & static files
